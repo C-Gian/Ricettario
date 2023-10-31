@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="font_sizes">
+        <item>Gr</item>
+        <item>Kg</item>
+        <item>Ml</item>
+        <item>L</item>
+        <item>Q.b</item>
+        <item>Unit</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prova"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:longClickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout28"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/viewMain"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/secondaryorange"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/dishName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunitolight"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="gggg"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:theme="@style/autoscroll"
+                card_view:layout_constraintBottom_toTopOf="@+id/dishDesc"
+                card_view:layout_constraintEnd_toEndOf="@+id/dishDesc"
+                card_view:layout_constraintStart_toEndOf="@id/viewMain"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dishDesc"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunitoextralight"
+                android:maxLines="1"
+                android:text="g"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:theme="@style/autoscroll"
+                card_view:layout_constraintBottom_toTopOf="@+id/dishIngredients"
+                card_view:layout_constraintEnd_toStartOf="@+id/imageView3"
+                card_view:layout_constraintStart_toEndOf="@+id/viewMain"
+                card_view:layout_constraintTop_toBottomOf="@+id/dishName" />
+
+            <TextView
+                android:id="@+id/dishIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunitoextralight"
+                android:text="Ingredients Number:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toStartOf="@+id/dishNumberIngredients"
+                card_view:layout_constraintStart_toEndOf="@+id/viewMain"
+                card_view:layout_constraintTop_toBottomOf="@+id/dishDesc" />
+
+            <TextView
+                android:id="@+id/dishNumberIngredients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunitoextralightitalic"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:theme="@style/autoscroll"
+                card_view:layout_constraintBottom_toBottomOf="@+id/dishIngredients"
+                card_view:layout_constraintEnd_toEndOf="@+id/dishDesc"
+                card_view:layout_constraintStart_toEndOf="@+id/dishIngredients"
+                card_view:layout_constraintTop_toBottomOf="@+id/dishDesc" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/selectedicon"
+                android:visibility="invisible"
+                android:clickable="false"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+

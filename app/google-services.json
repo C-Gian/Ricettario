@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "142239205251",
+    "firebase_url": "https://applista-ed210-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "applista-ed210",
+    "storage_bucket": "applista-ed210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142239205251:android:8e2633b7945ff8d0c898b6",
+        "android_client_info": {
+          "package_name": "com.example.applista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142239205251-9i2ru41719c9496956vmm266op00ut39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCFcQdEIGIUIZuFIvOJmSQ9DT7le2006k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142239205251-9i2ru41719c9496956vmm266op00ut39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142239205251:android:f31917765baca373c898b6",
+        "android_client_info": {
+          "package_name": "com.journaldev.recyclerviewcardview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142239205251-9i2ru41719c9496956vmm266op00ut39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCFcQdEIGIUIZuFIvOJmSQ9DT7le2006k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142239205251-9i2ru41719c9496956vmm266op00ut39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

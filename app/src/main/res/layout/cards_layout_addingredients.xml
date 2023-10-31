@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout29"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vieww"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/secondaryorange"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/ingredientName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/nunitolight"
+                android:text="Farina"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:theme="@style/autoscroll"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                card_view:layout_constraintBottom_toBottomOf="@+id/vieww"
+                card_view:layout_constraintEnd_toStartOf="@+id/ingredientValue"
+                card_view:layout_constraintStart_toStartOf="@+id/vieww"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ingredientValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitoextralight"
+                android:text="200"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:theme="@style/autoscroll"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                card_view:layout_constraintBottom_toBottomOf="@+id/vieww"
+                card_view:layout_constraintEnd_toStartOf="@+id/ingredientType"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ingredientType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:theme="@style/autoscroll"
+                android:fontFamily="@font/nunitoextralightitalic"
+                android:text="gr"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                card_view:layout_constraintBottom_toBottomOf="@+id/vieww"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
